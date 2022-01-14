@@ -1,0 +1,73 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+Add some style blocks below this line to style the cards.
+Feel free to borrow from Exercise 1.
+*/
+
+.next {
+    display: inline-block;
+}
+
+section {
+    border: 1px solid black;   
+    width: 275px;
+    margin: 7.5px;
+}
+
+h2 {
+    font-family: 'Nunito Sans';
+    padding-left: 25px;
+}
+
+img {
+    width: 100%;
+    justify-content: center;
+}
+
+p {
+    margin-left: 15px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 15px;
+}
+
+button {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+}
+
+
+/* Tablet Media Query */
+@media only screen and (max-width: 1000px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Mobile Phone Media Query */
+@media only screen and (max-width: 600px) {
+    /* .next {
+        display: inline-block;
+    } */
+    section {
+        width: 100%;
+    }
+    
+}
